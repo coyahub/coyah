@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UID:110202684</title>
+    <link rel="icon" href="./11.png">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
 
 </head>
 <body>
@@ -17,10 +18,10 @@
             </div>
             <div class="content">
                 <div class="text-img">
-                    <div class="img-box">
-                        <img src="https://s1.ax1x.com/2022/03/29/qyZxF1.png" alt="hello word!" >
+                    <div class="imgbox">
+                        <img src="./022.png" alt="hello word!" >
                     </div>
-                    <h3>
+                    <h3 class="you">
                         Time tries all.<br>
                         <span>
                             just do it!
@@ -39,13 +40,23 @@
 <script>
     const sec=document.querySelector('.sec');
     const toggle=document.querySelector('.toggle');
+    const imgbox=document.querySelector('.imgbox');
+    const sci=document.querySelector('.sci');
+    const you=document.querySelector('.you');
     toggle.onclick=function(){
         sec.classList.toggle('dark')
         if(sec.className.indexOf('dark')>-1){
-            toggle.innerHTML='<i class="fa fa-sun-o" aria-hidden="true"></i>'
+            toggle.innerHTML='<i class="fa fa-sun-o" aria-hidden="true"></i>';
+            imgbox.innerHTML='<img src="./02.png" alt="hello word!" >';
+            sci.innerHTML='<li><a href="https://www.zhihu.com/club/1178272710194593792" target="_blank"><i class="fa fa-rocket" aria-hidden="true"></i></a></li><li><a href="https://www.bilibili.com/?utm_source=gold_browser_extension" target="_blank"><i class="fa fa-power-off" aria-hidden="true"></i></a></li><li><a href="https://www.runoob.com/" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i></a></li>';
+            you.innerHTML='Hello ~~<br><span>Long time no see.</span>';
         }else{
-            toggle.innerHTML='<i class="fa fa-moon-o" aria-hidden="true"></i>'
+            toggle.innerHTML='<i class="fa fa-moon-o" aria-hidden="true"></i>';
+            imgbox.innerHTML='<img src="./022.png" alt="hello word!" >';
+            sci.innerHTML='<li><a href="https://www.zhihu.com/club/1178272710194593792" target="_blank"><i class="fa fa-paint-brush" aria-hidden="true"></i></a></li><li><a href="https://www.bilibili.com/?utm_source=gold_browser_extension" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li><li><a href="https://www.marstab.com/hero/ABA3NNT1250" target="_blank"><i class="fa fa-map-signs" aria-hidden="true"></i></a></li>';
+            you.innerHTML='Time tries all.<br><span>just do it!</span>';
+
         }
     }
 </script>
-</html>
+
