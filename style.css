@@ -149,14 +149,14 @@
 	}
 	.about{
 		font-size:12px;
-		padding:16px;
+		padding:15px;
 		margin:35px;
 		margin-top:0px;
 		margin-bottom:0px;
 		border-radius: 15px;
 		background: #ecf0f3;
-		box-shadow:  1px 1px 10px #b1b4b6,
-			-5px -5px 10px #ffffff;
+		box-shadow:  1px 1px 5px #b1b4b6,
+			-3px -3px 5px #ffffff;
 	}
 	.box{
 		margin:35px;
